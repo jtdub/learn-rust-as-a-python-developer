@@ -1,0 +1,61 @@
+site_name: Rust for Pythonistas
+site_url: https://jtdub.github.io/learn-rust-as-a-python-developer/
+repo_url: https://github.com/jtdub/learn-rust-as-a-python-developer
+
+theme:
+  name: material
+  language: en
+  palette:
+    primary: orange
+    accent: deep orange
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+
+nav:
+  - 'Home': 'index.md'
+  - 'Getting Started':
+    - 'The Python-Rust Bridge': 'foundation/bridge.md'
+    - 'Toolchain Setup': 'foundation/toolchain.md'
+    - 'Your First Rust Code': 'foundation/hello-rust.md'
+  - 'Language Fundamentals':
+    - 'Immutable by Default': 'language-core/immutability.md'
+    - 'Type Declarations': 'language-core/types.md'
+    - 'Flow Control': 'language-core/control.md'
+  - 'Memory Management':
+    - 'The Ownership Model': 'memory-mgmt/ownership-model.md'
+    - 'Borrowing Rules': 'memory-mgmt/borrowing.md'
+    - 'Lifetime Annotations': 'memory-mgmt/lifetimes.md'
+  - 'Working with Data':
+    - 'Dynamic Arrays': 'data-collections/vectors.md'
+    - 'Key-Value Storage': 'data-collections/hashmaps.md'
+    - 'Text Handling': 'data-collections/text.md'
+  - 'Advanced Types':
+    - 'Data Structures': 'type-patterns/structures.md'
+    - 'Sum Types': 'type-patterns/enumerations.md'
+    - 'Behavior Definitions': 'type-patterns/traits.md'
+  - 'Handling Failures':
+    - 'Result Pattern': 'error-strategy/results.md'
+    - 'Optional Values': 'error-strategy/options.md'
+    - 'Error Types': 'error-strategy/custom-errors.md'
+  - 'Concurrent Programming':
+    - 'Async Fundamentals': 'concurrent-code/async-basics.md'
+    - 'Runtime Environment': 'concurrent-code/runtime.md'
+  - 'Code Quality':
+    - 'Testing Approach': 'quality-assurance/testing.md'
+    - 'Documentation': 'quality-assurance/docs.md'
+  - 'Build Projects':
+    - 'Recipe Manager CLI': 'practical-builds/recipe-manager.md'
+    - 'Log File Analyzer': 'practical-builds/log-analyzer.md'
+    - 'Weather API Client': 'practical-builds/weather-client.md'
+    - 'Task Queue Service': 'practical-builds/task-queue.md'
+    - 'Data Transformer': 'practical-builds/transformer.md'
+  - 'Quick Lookup': 'translation-guide.md'
