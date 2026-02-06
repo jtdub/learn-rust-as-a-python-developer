@@ -41,8 +41,10 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Guide:
+      - The Python-Rust Bridge: python-rust-bridge.md
       - Getting Started: 01-getting-started.md
       - Basic Syntax: 02-basic-syntax.md
+      - "Deep Dive: Immutability": immutability-deep-dive.md
       - Ownership & Borrowing: 03-ownership.md
       - Structs & Enums: 04-structs-and-enums.md
       - Error Handling: 05-error-handling.md
