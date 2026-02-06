@@ -1,0 +1,61 @@
+site_name: Learn Rust as a Python Developer
+site_description: A fast-track guide to Rust for experienced Python developers
+site_url: ""
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Guide:
+      - Getting Started: 01-getting-started.md
+      - Basic Syntax: 02-basic-syntax.md
+      - Ownership & Borrowing: 03-ownership.md
+      - Structs & Enums: 04-structs-and-enums.md
+      - Error Handling: 05-error-handling.md
+      - Collections: 06-collections.md
+      - Traits: 07-traits.md
+      - Modules & Crates: 08-modules-and-crates.md
+      - Iterators & Closures: 09-iterators-closures.md
+      - Concurrency: 10-concurrency.md
+      - Testing: 11-testing.md
+      - Building CLI Tools: 12-building-cli-tools.md
+  - Projects:
+      - Overview: projects/index.md
+      - "Project 1: Calculator": projects/01-calculator.md
+      - "Project 2: Word Counter": projects/02-word-counter.md
+      - "Project 3: TODO App": projects/03-todo-app.md
+      - "Project 4: GitHub Stats": projects/04-github-stats.md
